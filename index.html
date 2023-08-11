@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/repeat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="javascript.js" defer></script>
+    <script src="https://kit.fontawesome.com/6263c49908.js" crossorigin="anonymous"></script>
+
+    <title>Clicker</title>
+</head>
+<body>
+    <div class="main">
+        <div class="stats">
+            <div class="attack">
+                <h1 class="heading">Attack Damage : 1<img src="img/sword.png" class="icon sword"></h1>
+                <div class="attack-bar"></div>
+            </div>
+            <div class="spell">
+                <h1 class="heading">Spell Damage : 1<img src="img/spell.png" class="icon spell"></h1>
+                <div class="spell-bar"></div>
+            </div>
+        </div>
+        <div class="monster">
+            <h1 title="monster-name">Todd</h1>
+            <h2 title="monster-class">Common Monster</h2>
+            <div class="monster-health">
+                <div class="damaged-health"></div>
+            </div>
+            <img class="monster-image" src="img/todd.jpg" alt="todd">
+        </div>
+    </div>
+    <audio src="audio/cry.wav" class="cry"></audio>
+    <audio src="audio/hit.mp3" class="hit"></audio>
+</body>
+</html>

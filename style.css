@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 1rem;
+}
+
+.monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 5px #000;
+    max-width: 80%;
+
+    background: linear-gradient(to top, white 50%,#1f68ee, #61f381);
+}
+
+.monster-health {
+    width: 20rem;
+    height: 2rem;
+    background: red;
+    border: 0.5rem solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 6px 6px 6px #000;
+}
+
+.monster-image {
+    width: 300px;
+    height: 300px;
+    padding: 6px;
+    background: linear-gradient(to right, #1f68ee, #61f381);
+    margin: 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+    box-shadow: 10px 10px 10px #000;
+    position: relative;
+
+    transition: 500ms ease-in-out;
+}
+
+.damaged-health {
+    transition: 0.25s ease-in-out;
+    position: absolute;
+    right: 0;
+    height: 2rem;
+    width: 0;
+    background-color: white;
+}
+
+.stats {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats .heading {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 1.5rem 2rem;
+    width: 40px;
+    height: 40px;
+    transition: 0.25s ease-in-out;
+}
+

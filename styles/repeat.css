@@ -1,0 +1,115 @@
+.transition1 {
+    animation-name: transitionOne;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transitionOne {
+    0% {
+        transform: translate(0);
+        box-shadow: 5px 5px 5px #f00;
+        background: linear-gradient(to top, #d62e2e, #bd0a0a);
+    }   
+    60% {
+        transform: translate(-10px, -10px);
+        box-shadow: 10px 10px 10px #fff;
+    }
+    100% {
+        transform: translate(0);
+        box-shadow: 10px 10px 10px #000;
+        background: linear-gradient(to right, #1f68ee, #61f381);
+    }
+}
+
+
+.transition2 {
+    animation-name: transitionTwo;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transitionTwo {
+    0% {
+        transform: translate(0);
+        border: 3px solid #f00;
+        box-shadow: 10px 10px 10px #f00;
+        background: linear-gradient(to top, #d62e2e, #bd0a0a);
+    }   
+    60% {
+        transform: translate(10px, -10px);
+        border: none;
+    }
+    100% {
+        transform: translate(0);
+        background: linear-gradient(to right, #1f68ee, #61f381);
+    }
+}
+
+.transition3 {
+    animation-name: transitionThree;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transitionThree {
+    0% {
+        transform: translate(0);
+        border: 3px solid #f00;
+        box-shadow: 5px 5px 5px #f00;
+        background: linear-gradient(to top, #d62e2e, #bd0a0a);
+    }   
+    60% {
+        transform: translate(-10px, 10px);
+        border: none;
+    }
+    100% {
+        transform: translate(0);
+        background: linear-gradient(to right, #1f68ee, #61f381);
+    }
+}
+
+.transition4 {
+    animation-name: transitionFour;
+    animation-duration: 0.25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes transitionFour {
+    0% {
+        transform: translate(0);
+        border: 3px solid #f00;
+        box-shadow: 10px 10px 10px #f00;
+        background: linear-gradient(to top, #d62e2e, #bd0a0a);
+    }   
+    60% {
+        transform: translate(10px, 10px);
+        border: none;
+    }
+    100% {
+        transform: translate(0);
+        background: linear-gradient(to right, #1f68ee, #61f381);
+    }
+}
+
+.active {
+    animation-name : iconAnimation;
+    animation-iteration-count: 1;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes iconAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
